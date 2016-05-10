@@ -60,7 +60,7 @@ var UrlShortenner = React.createClass({
       <form className="urlShortenner" onSubmit={this.handleSubmit}>
         <input
           type="text"
-          placeholder="http://yikyak.com"
+          placeholder="yikyak.com"
           value={this.state.urlStr}
           onChange={this.handleUrlChange}
         />

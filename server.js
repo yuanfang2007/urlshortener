@@ -51,7 +51,7 @@ app.get('/api/urlShortenner', function(req, res) {
       process.exit(1);
     }
   });
-  res.json({url:"http://localhost:3000/"+hash});
+  res.json({url: "/" +hash});
 });
 
 app.get('/*', function(req, res) {
