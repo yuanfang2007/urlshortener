@@ -46,7 +46,7 @@ var UrlShortenner = React.createClass({
       success: function(data) {
         console.log("successs");
         this.setState({data: data});
-        $("#shortUrl").html("shortened url:" + '<a href='+data.url+'>'+data.url+'</a>');
+        $("#shortUrl").html("shortened url:" + '<a href='+data.url+'>'+document.location.href+data.url+'</a>');
       }.bind(this),
       error: function(xhr, status, err) {
         console.log("errrror");
